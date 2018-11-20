@@ -7,6 +7,8 @@ public class FirstFrame extends JFrame
 	public FirstFrame()
 	{
 		super();
+		
+		setUpFrame();
 	}
 	private void setUpFrame()
 	{

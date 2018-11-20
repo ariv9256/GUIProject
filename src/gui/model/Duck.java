@@ -8,11 +8,7 @@ public class Duck
 	
 	public Duck()
 	{
-		myDuck = new Duck();
-	}
-	
-	public void start()
-	{
 		
 	}
+	
 }
