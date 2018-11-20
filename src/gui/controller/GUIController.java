@@ -7,6 +7,7 @@ public class GUIController
 {
 	private Duck myDuck;
 	private FirstFrame appFrame;
+	
 	public GUIController()
 	{
 		myDuck = new Duck();
