@@ -1,5 +1,7 @@
 package gui.controller;
 
+import gui.model.Duck;
+
 public class GUIController
 {
 	
