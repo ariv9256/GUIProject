@@ -1,8 +1,6 @@
 package gui.view;
 
-import javax.swing.JPanel;
-import javax.swing.JButton;
-import javax.swing.JLabel;
+import javax.swing.*;
 import gui.controller.GUIController;
 
 
@@ -12,6 +10,7 @@ public class FirstPanel extends JPanel
 	private FirstPanel appPanel;
 	private JLabel firstLabel;
 	private JButton firstButton;
+	private SpringLayout appLayout;
 	
 	
 	public FirstPanel(GUIController appController)
@@ -21,6 +20,7 @@ public class FirstPanel extends JPanel
 		
 		firstLabel = new JLabel("words in a line!");
 		firstButton = new JButton("Click me!!");
+		appLayout = new SpringLayout();
 		
 		setupPanel();
 		setupLayout();
@@ -29,10 +29,16 @@ public class FirstPanel extends JPanel
 	}
 	private void setupPanel()
 	{
-		
+		this.setLayout(appLayout);
+		this.add(firstButton);
+		this.add(firstLabel);
 	}
 	private void setupLayout()
 	{
+		appLayout.putConstraint(SpringLayout.NORTH, firstLabel, 74, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, firstLabel, -90, SpringLayout.EAST, this);
+		appLayout.putConstraint(SpringLayout.WEST, firstButton, 175, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.SOUTH, firstButton, -135, SpringLayout.SOUTH, this);
 		
 	}
 	private void setupListeners()
