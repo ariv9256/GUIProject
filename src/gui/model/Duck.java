@@ -4,11 +4,12 @@ import gui.model.Duck;
 
 public class Duck
 {
-	private Duck myDuck;
+	private String sound;
 	
 	public Duck()
 	{
-		
+		this.sound = "Quack Quack";
 	}
+	
 	
 }
