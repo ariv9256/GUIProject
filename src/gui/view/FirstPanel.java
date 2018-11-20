@@ -2,6 +2,9 @@ package gui.view;
 
 import javax.swing.*;
 import gui.controller.GUIController;
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class FirstPanel extends JPanel
@@ -50,6 +53,12 @@ public class FirstPanel extends JPanel
 	}
 	private void setupListeners()
 	{
-		
+		firstButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent mouseClick)
+			{
+				changeBackground();
+			}
+		});
 	}
 }
