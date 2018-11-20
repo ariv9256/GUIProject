@@ -27,6 +27,13 @@ public class FirstPanel extends JPanel
 		setupListeners();
 		
 	}
+	private void changeBackground()
+	{
+		int red = (int) (Math.random() * 256);
+		int green = (int)(Math.random() * 256);
+		int blue = (int)(Math.random() * 256);
+		this.setBackground(new Color(red, green, blue));
+	}
 	private void setupPanel()
 	{
 		this.setLayout(appLayout);
